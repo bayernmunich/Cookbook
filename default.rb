@@ -28,7 +28,7 @@ end
 
 # Install the deepspace app, restart the Tomcat service if necessary
 remote_file 'deepspace_app' do
-    source 'https://github.com/KNShrinidhi/test/blob/master/target/Deepspace.war'
+    source 'https://************.visualstudio.com/_apis/resources/Containers/385355?itemPath=drop%2Ftarget%2FDeepspace.war'
     path '/var/lib/tomcat7/webapps/ROOT.war'
     action :create
     notifies :restart, "service[tomcat7]", :immediately
